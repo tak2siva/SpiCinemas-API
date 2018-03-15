@@ -1,0 +1,6 @@
+FROM openjdk:8
+
+COPY artifacts/JooqFlywaySpringBoot.jar artifacts/
+
+ENTRYPOINT ["java", "-jar",  "-Dspring.profiles.active=prod", "/artifacts/JooqFlywaySpringBoot.jar"]
+
