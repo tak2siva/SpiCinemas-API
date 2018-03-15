@@ -1,0 +1,2 @@
+FROM nginx
+COPY static-asset/ /usr/share/nginx/html/
