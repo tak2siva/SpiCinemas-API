@@ -12,6 +12,8 @@ services:
     build:
       context: .
       dockerfile: Nginx-Dockerfile
+    volumes:
+      - $PWD/static-assets:/usr/share/nginx/html
     ports:
       - "8080:80"
   api-service:
